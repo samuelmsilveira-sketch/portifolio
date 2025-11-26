@@ -28,6 +28,8 @@
     .btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
     .btn-primary{background:linear-gradient(90deg,var(--accent),#ff6b6b);color:#330000}
     .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .btn:hover{opacity:0.85;transition:opacity .2s}
+    button{font-family:inherit}
 
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
     .project{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
@@ -39,8 +41,9 @@
     .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
     .skill{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:600}
 
-    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
-    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#150000;color:inherit;font-family:inherit}
+    input:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,0.1)}
+    textarea{min-height:120px;resize:vertical}
     input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#150000;color:inherit}
     textarea{min-height:120px;resize:vertical}
 
@@ -69,9 +72,9 @@
         <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#contato">Contato</a>
-      </nav>
-    </header>
-
+    <section id="sobre" class="hero">
+      <div class="card">
+        <h1>Olá — eu sou <span style="color:var(--accent)">Samuel</span></h1>
     <section class="hero">
       <div class="card">
         <h1>Olá — eu sou <span style="color:var(--accent)">Samuel</span></h1>
@@ -159,4 +162,3 @@
   </script>
 </body>
 </html>
-
